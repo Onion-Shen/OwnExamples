@@ -85,7 +85,7 @@ class LockView: UIView
             {
                 ball.layer.borderColor = UIColor.red.cgColor
                 let centerBall = self.selectedBall?[idx]
-                if self.dataList?.index(where: { return $0 == centerBall?.center }) == nil
+                if self.dataList?.firstIndex(where: { return $0 == centerBall?.center }) == nil
                 {
                     self.dataList?.append((centerBall?.center)!)
                     centerBall?.isHidden = false
