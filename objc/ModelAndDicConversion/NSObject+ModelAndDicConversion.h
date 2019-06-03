@@ -5,10 +5,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSObject (ModelAndDicConversion)
 
 ///model -> dictionary
-- (nullable NSDictionary *)model2Dic;
+- (nullable NSDictionary<NSString *,id> *)model2Dic;
 
-///dictionary -> model
-- (instancetype)initWithDictionary:(NSDictionary *)dic;
+- (NSDictionary<NSString *,NSString *> *)clsInArray;
+
+- (NSDictionary<NSString *,NSDictionary<NSString *,NSString *> *> *)clsInDic;
 
 @end
 

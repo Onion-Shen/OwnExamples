@@ -1,5 +1,5 @@
 #import "NotificationCenter.h"
-#import "../methodDispatch/NSObject+MethodDispatch.h"
+#import "NSObject+MethodDispatch.h"
 
 static NotificationCenter *Singleton = nil;
 
